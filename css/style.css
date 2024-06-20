@@ -1,10 +1,211 @@
 :root {
-    --text-color:#707070;
-    --icon-color:#2C2D2D;
-    --icon-active-color:#FFAA3B;
-    --white-color:#FFFFFF;
+    --text-color: #707070;
+    --icon-color: #2C2D2D;
+    --icon-active-color: #FFAA3B;
+    --white-color: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+html {
+    scroll-padding-top: 75px;
 }
 
 body {
-    font-family: 'Noto Sans TC';
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 75px;
+    font-family: 'Noto Sans TC', 'EnglishFont';
 }
+
+/* header */
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 75px;
+    background-color: var(--white-color);
+}
+
+.header h1 {
+    width: 58px;
+    padding-bottom: 13px;
+}
+
+.header ul {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.header ul li+li {
+    margin-left: 30px;
+}
+
+/* header */
+
+/* kv */
+.kv {
+    display: flex;
+    justify-content: center;
+    padding: 260px 0 282px;
+    background-image: url('../images//kv.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .28);
+    background-position: center center;
+    background-blend-mode: multiply;
+    text-align: center;
+    margin-bottom: 66px;
+}
+
+.kv-slogan-subTitle,
+.kv-slogan-title {
+    color: var(--white-color);
+}
+
+.kv-slogan-title {
+    line-height: 99px;
+    margin-left: 20px;
+    font-size: 68px;
+    letter-spacing: 25px;
+}
+
+.kv-slogan-subTitle {
+    line-height: 55px;
+    font-size: 36px;
+    letter-spacing: 4px;
+}
+
+/* kv */
+
+
+/* about */
+.about {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 67px;
+}
+
+.about-img {
+    max-width: 373px;
+}
+
+.about-content {
+    padding: 16px 0 16px 32px;
+}
+
+.about-content h2 {
+    font-size: 21px;
+    margin-bottom: 40px;
+}
+
+.about-content p {
+    font-size: 15px;
+    line-height: 2;
+    letter-spacing: 0.75px;
+    font-weight: normal;
+    white-space: pre-line;
+    margin-bottom: 31px;
+}
+
+.about-content hr {
+    /* 粗度為2px */
+    border: 2px solid var(--text-color);
+    max-width: 442px;
+    margin-left: 0;
+}
+
+/* about */
+
+/* service */
+.service {
+    max-width: 1040px;
+    margin: 0 auto 7.8% auto;
+}
+
+.service h2 {
+    font-size: 21px;
+    margin-bottom: 40px;
+}
+
+.service-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4%;
+}
+
+.service-item:nth-child(n+1) {
+    max-width: 500px;
+}
+
+.service-item:nth-child(n+2) {
+    max-width: 500px;
+}
+
+.service-item:nth-child(2) {
+    margin-top: 20%;
+}
+
+
+.service-item:nth-child(3) {
+    margin-top: -70%;
+}
+
+/* service */
+
+/* contact */
+.contact {
+    text-align: center;
+}
+
+/* contact */
+
+
+
+/* footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    background-color: var(--white-color);
+    ;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    margin-bottom: 5px;
+}
+
+.footer-list li {
+    width: 14px;
+}
+
+
+
+.footer-list li:nth-child(2),
+.footer-list li:nth-child(3) {
+    width: 22px;
+}
+
+
+.footer-since {
+    max-width: 222px;
+}
+
+/* footer */
