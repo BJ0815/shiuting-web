@@ -1,0 +1,10 @@
+:root {
+    --text-color:#707070;
+    --icon-color:#2C2D2D;
+    --icon-active-color:#FFAA3B;
+    --white-color:#FFFFFF;
+}
+
+body {
+    font-family: 'Noto Sans TC';
+}
