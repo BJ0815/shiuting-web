@@ -162,12 +162,13 @@ body {
 }
 
 .about-content {
-    padding: 16px 0 16px 32px;
+    padding: 30px 0 0 32px;
+
 }
 
 .about-content h2 {
     font-size: 21px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .about-content p {
@@ -181,7 +182,7 @@ body {
 
 .about-content hr {
     /* 粗度為2px */
-    border: 2px solid var(--text-color);
+    border: 1px solid var(--text-color);
     max-width: 442px;
     margin-left: 0;
 }
