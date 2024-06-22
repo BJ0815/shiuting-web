@@ -1,9 +1,5 @@
 # Shiuting-web
 
-## 設計稿
-- [設計稿(電腦)](https://xd.adobe.com/view/969583ab-c50d-4d38-8b8b-5043017a6a6b-c3c6/)
-- [設計稿(手機)](https://xd.adobe.com/view/2ffa28ff-e770-4c35-8a6f-ab2c24a1642b-7aa9/)
-
 ## 專案結構
 
 ```plaintext
