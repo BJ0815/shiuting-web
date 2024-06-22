@@ -24,7 +24,7 @@ shiuting-web
 
 ## 缺少的項目
 - `favicon.icon` 沒給
-- SEO 沒給
+- SEO 沒給 *(h1,title,description)
 - Google Fonts 只有思源黑體，缺少英文字體（暫時用相近的）
 
 ## 待辦清單
