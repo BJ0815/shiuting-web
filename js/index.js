@@ -19,7 +19,7 @@ const serviceDoms = document.querySelectorAll(".service-item");
 const dialogDom = document.querySelector("#dialog");
 const list = [
   {
-    img: "../images/interior-design-detail.jpg",
+    img: "./images/interior-design-detail.jpg",
     title: "室內設計",
     content: [
       "1.初步討論構想",
@@ -33,17 +33,17 @@ const list = [
     ],
   },
   {
-    img: "../images/space-planning-detail.jpg",
+    img: "./images/space-planning-detail.jpg",
     title: "空間規劃",
     content: ["各類空間或居室的收納比例調整"],
   },
   {
-    img: "../images/system-cabinet-detail.jpg",
+    img: "./images/system-cabinet-detail.jpg",
     title: "系統櫥櫃",
     content: ["依照生活或使用需求給予建議"],
   },
   {
-    img: "../images/furniture-layout-detail.jpg",
+    img: "./images/furniture-layout-detail.jpg",
     title: "傢俱配置",
     content: ["現成或訂製活動傢俱安裝擺設"],
   },
