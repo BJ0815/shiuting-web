@@ -136,16 +136,6 @@ table {
 
 
 /* custom */
-
-
-
-@font-face {
-	font-family: 'EnglishFont';
-	src: local('Arial'), local('Arial'), local('sans-serif');
-	unicode-range: U+0020-007F;
-}
-
-
 img {
 	width: 100%;
 }

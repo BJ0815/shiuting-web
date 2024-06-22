@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/index.js" defer></script>
@@ -17,24 +21,26 @@
   <body>
     <header class="header">
       <h1>
-        <a href="./index.html">
-          <img src="./images/logo.png" alt="logo" draggable="false"/>
-        </a>
+        <a href="./index.html" alt="旭騰傢俱"> 旭騰傢俱 </a>
       </h1>
-      <nav>
+      <div class="menu-open" id="menuOpen">
+        <img src="./images/icons/menu.png" alt="menu" draggable="false" />
+      </div>
+      <nav class="menu" id="menu">
+        <div class="menu-close" id="menuClose"></div>
         <ul>
-          <!-- <li>
+          <li>
             <a href="#HOME"> HOME </a>
-          </li> -->
-          <!-- <li>
+          </li>
+          <li>
             <a href="#ABOUT"> ABOUT </a>
-          </li> -->
-          <!-- <li>
+          </li>
+          <li>
             <a href="#SERVICE"> SERVICE </a>
           </li>
           <li>
             <a href="#CONTACT"> CONTACT </a>
-          </li> -->
+          </li>
         </ul>
       </nav>
     </header>
@@ -45,9 +51,10 @@
           <p class="kv-slogan-subTitle">Shiu-Ting Furniture Accessaries</p>
         </h2>
       </section>
+      <div class="line"></div>
       <section class="about" id="ABOUT">
         <div class="about-img">
-          <img src="./images/about.jpg" alt="" draggable="false" />
+          <img src="./images/about.jpg" alt="about" draggable="false" />
         </div>
         <div class="about-content">
           <h2>About</h2>
@@ -64,16 +71,52 @@
         <h2>Service</h2>
         <div class="service-group">
           <div class="service-item">
-            <img src="./images/interior-design.jpg" alt="" draggable="false" />
+            <div class="service-item-content">
+              <div class="service-item-img">
+                <img
+                  src="./images/interior-design.jpg"
+                  alt="室內設計"
+                  draggable="false"
+                />
+              </div>
+              <div class="service-item-text">室內設計</div>
+            </div>
           </div>
           <div class="service-item">
-            <img src="./images/space-planning.jpg" alt="" draggable="false" />
+            <div class="service-item-content">
+              <div class="service-item-img">
+                <img
+                  src="./images/space-planning.jpg"
+                  alt="空間規劃"
+                  draggable="false"
+                />
+              </div>
+              <div class="service-item-text">空間規劃</div>
+            </div>
           </div>
           <div class="service-item">
-            <img src="./images/system-cabinet.jpg" alt="" draggable="false" />
+            <div class="service-item-content">
+              <div class="service-item-img">
+                <img
+                  src="./images/system-cabinet.jpg"
+                  alt="系統櫥櫃"
+                  draggable="false"
+                />
+              </div>
+              <div class="service-item-text">系統櫥櫃</div>
+            </div>
           </div>
           <div class="service-item">
-            <img src="./images/furniture-layout.jpg" alt="" draggable="false" />
+            <div class="service-item-content">
+              <div class="service-item-img">
+                <img
+                  src="./images/furniture-layout.jpg"
+                  alt="傢俱配置"
+                  draggable="false"
+                />
+              </div>
+              <div class="service-item-text">傢俱配置</div>
+            </div>
           </div>
         </div>
       </section>
@@ -82,7 +125,10 @@
         <div class="contact-group">
           <ul class="contact-list">
             <li>
-              <a href="https://www.google.com/maps/dir/25.003077,121.459947/22063%E6%96%B0%E5%8C%97%E5%B8%82%E5%9B%9B%E5%B7%9D%E8%B7%AF%E4%B8%80%E6%AE%B5225%E8%99%9F%E6%97%AD%E9%A8%B0%E5%82%A2%E4%BF%B1%E9%A4%A8/@25.0030826,121.4574877,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x34680331addf2d43:0xee4e4044e4b770d9!2m2!1d121.4601863!2d25.0031058!3e0?entry=ttu" target="_blank">
+              <a
+                href="https://www.google.com/maps/dir/25.003077,121.459947/22063%E6%96%B0%E5%8C%97%E5%B8%82%E5%9B%9B%E5%B7%9D%E8%B7%AF%E4%B8%80%E6%AE%B5225%E8%99%9F%E6%97%AD%E9%A8%B0%E5%82%A2%E4%BF%B1%E9%A4%A8/@25.0030826,121.4574877,17z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x34680331addf2d43:0xee4e4044e4b770d9!2m2!1d121.4601863!2d25.0031058!3e0?entry=ttu"
+                target="_blank"
+              >
                 <svg
                   id="MAP"
                   xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +147,10 @@
               </a>
             </li>
             <li>
-              <a href="https://line.me/R/ti/p/@007lhqre?oat_content=url&ts=06011815" target="_blank">
+              <a
+                href="https://line.me/R/ti/p/@007lhqre?oat_content=url&ts=06011815"
+                target="_blank"
+              >
                 <svg
                   id="LINE"
                   xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +176,10 @@
               </a>
             </li>
             <li>
-              <a href="https://www.google.com/maps/place/%E6%97%AD%E9%A8%B0%E5%82%A2%E4%BF%B1%C2%B7%E8%A8%AD%E8%A8%88/@25.0031058,121.4601863,15z/data=!4m6!3m5!1s0x34680331addf2d43:0xee4e4044e4b770d9!8m2!3d25.0031058!4d121.4601863!16s%2Fg%2F11f0kxrmwl?entry=ttu" target="_blank">
+              <a
+                href="https://www.google.com/maps/place/%E6%97%AD%E9%A8%B0%E5%82%A2%E4%BF%B1%C2%B7%E8%A8%AD%E8%A8%88/@25.0031058,121.4601863,15z/data=!4m6!3m5!1s0x34680331addf2d43:0xee4e4044e4b770d9!8m2!3d25.0031058!4d121.4601863!16s%2Fg%2F11f0kxrmwl?entry=ttu"
+                target="_blank"
+              >
                 <svg
                   id="PHONE"
                   xmlns="http://www.w3.org/2000/svg"
@@ -154,10 +206,11 @@
             </li>
           </ul>
           <div class="contact-since">
-            <img src="./images//since.png" alt="" />
+            <img src="./images//since.png" alt="Shiu-Ting Furniture Accessaries Since 1993" draggable="false" />
           </div>
         </div>
       </section>
     </main>
+    <div class="dialog" id="dialog"></div>
   </body>
 </html>
