@@ -3,6 +3,7 @@ const menuOpenDom = document.querySelector("#menuOpen");
 const menuCloseDom = document.querySelector("#menuClose");
 const menuDom = document.querySelector("#menu");
 const htmlDom = document.querySelector("html");
+const navDoms = document.querySelectorAll(".menu li");
 menuOpenDom.addEventListener("click", () => {
   menuDom.classList.add("active");
   htmlDom.classList.add("overflow-hidden");
@@ -12,6 +13,15 @@ menuCloseDom.addEventListener("click", () => {
   menuDom.classList.remove("active");
   htmlDom.classList.remove("overflow-hidden");
 });
+
+navDoms.forEach((navDom) => {
+  navDom.addEventListener("click", () => {
+    menuDom.classList.remove("active");
+    htmlDom.classList.remove("overflow-hidden");
+  });
+})
+
+
 // 漢堡選單
 
 // services light box

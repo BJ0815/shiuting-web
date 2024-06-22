@@ -79,16 +79,20 @@ body {
     white-space: nowrap;
 }
 
-.header ul {
+.menu ul {
     display: flex;
     padding-bottom: 15px;
 }
 
-.header ul li+li {
+.menu ul li+li {
     margin-left: 30px;
 }
 
-.header ul li:hover a {
+.menu ul li a {
+    font-size: 11px;
+}
+
+.menu ul li:hover a {
     color: var(--icon-active-color);
 }
 
@@ -129,6 +133,10 @@ body {
         min-width: 43px;
     }
 
+    .menu ul li a {
+        font-size: 25px;
+    }
+
     .header h1,
     .menu ul {
         padding-bottom: 0;
@@ -161,9 +169,9 @@ body {
     }
 
     .header nav ul li {
-        font-size: 25px;
         margin-left: 0px;
     }
+    
 
     .menu ul li+li {
         margin-top: 50px;
