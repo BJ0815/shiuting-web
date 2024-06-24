@@ -17,9 +17,3 @@ shiuting-web
 ├── index.html
 └── README.md
 ```
-
-## 缺少的項目
-- Google Fonts 只有思源黑體，缺少英文字體（暫時用相近的）
-
-## 待辦清單
-- 字體設定
